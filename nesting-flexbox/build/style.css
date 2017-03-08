@@ -47,7 +47,6 @@ a:hover {
 
 /*our first flex item*/
 .slider-nav li {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; /* this makes the li a flex CONATINER */
@@ -63,7 +62,23 @@ a:hover {
           flex: 1;
 }
 
+.slider-nav .arrow a {
+  font-size: 40px;
+}
+
+/* make a flex container, too with span inside */
 .slider-nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-nav span {
   display: block;
   width: 100%;
 }
