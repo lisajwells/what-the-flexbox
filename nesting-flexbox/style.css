@@ -34,10 +34,27 @@ a:hover {
   background:rgba(0,0,0,0.4);
 }
 
-
+/*our flex container*/
 .slider-nav ul {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+/*our first flex item*/
+.slider-nav li {
+  border: 1px solid red;
+  display: flex; /* this makes the li a flex CONATINER */
+  flex: 2; /*this acts on the li as a flex ITEM*/
+  text-align: center;
+}
+
+.slider-nav .arrow {
+  flex: 1;
+}
+
+.slider-nav a {
+  display: block;
+  width: 100%;
+}
